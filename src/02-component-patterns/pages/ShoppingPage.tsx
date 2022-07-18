@@ -4,12 +4,13 @@ import {
   ProductImage,
   ProductTitle,
 } from "../components";
+import { products } from "../data/products";
 
 import "../styles/custom-styles.css";
 import { useShoppingCart } from "../hooks/useShoppingCart";
 
 export const ShoppingPage = () => {
-  const { shoppingCart, onProductCountChange, products } = useShoppingCart();
+  const { shoppingCart, onProductCountChange } = useShoppingCart();
   return (
     <div>
       <h1>Shopping Store</h1>
